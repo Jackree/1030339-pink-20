@@ -1,7 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Иванов](https://up.htmlacademy.ru/adaptive/20/user/1030339).
-* Наставник: `Неизвестно`.
 
 ---
 
