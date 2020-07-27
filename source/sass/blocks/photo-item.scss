@@ -1,0 +1,25 @@
+.photo-item {
+  background-color: #F2F2F2;
+}
+
+.photo-item__user {
+  margin: 0;
+  font-weight: bold;
+}
+
+.photo-item__time {
+  margin: 0;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo-item__text {
+  margin: 0;
+}
+
+.photo-item__likes {
+  margin: 0;
+  text-transform: uppercase;
+  color: $accent-color;
+}
