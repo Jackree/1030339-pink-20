@@ -11,6 +11,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -22,6 +23,10 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.inner-page {
+  background-color: #FFFFFF;
 }
 
 .visually-hidden {

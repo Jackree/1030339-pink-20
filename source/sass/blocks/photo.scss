@@ -1,8 +1,38 @@
 .photo__lead {
-  margin: 0;
+  margin: 0 auto;
   width: 250px;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 50px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 450px;
+    padding-top: 100px;
+    padding-bottom: 85px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 575px;
+    padding-bottom: 95px;
+  }
+}
+
+.photo__panorama {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.photo__list-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    padding: 0 10px;
+  }
 }
