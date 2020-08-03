@@ -1,15 +1,99 @@
 .promo {
+  position: relative;
+  z-index: 0;
+  margin-top: -70px;
+  margin-bottom: 270px;
+  padding-top: 100px;
+  background-color: $primary-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+    margin-bottom: 0;
+    padding-top: 210px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
+
+.promo__container {
+  position: relative;
+  padding-bottom: 310px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 286px;
+    bottom: 20px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &::after {
+      z-index: -1;
+      right: 20px;
+      bottom: 0;
+      width: 660px;
+      height: 545px;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-position: 0 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 455px;
+
+    &::after {
+     bottom: 0;
+      width: 1050px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position: 140px 5px;
+    }
+  }
 }
 
 .promo__slogan {
-  margin: 0;
-  margin-top: -66px;
-  padding-top: 95px;
-  padding-bottom: 320px;
+  width: 280px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  text-align: center;
   color: #FFFFFF;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-left: 0;
+    padding: 0 50px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 35px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.promo__downloads {
+  position: absolute;
+  bottom: -270px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    bottom: 0;
+  }
 }

@@ -1,14 +1,17 @@
 body {
+  min-width: 320px;
   margin: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  background-color: #F2F2F2;
   color: $primary-color;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -22,6 +25,10 @@ a {
   box-sizing: border-box;
 }
 
+.inner-page {
+  background-color: #FFFFFF;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,4 +38,12 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0)
+}
+
+.container {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }

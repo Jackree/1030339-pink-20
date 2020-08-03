@@ -1,0 +1,25 @@
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.photo-list__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 10px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(33.33% - 15px);
+  }
+}
