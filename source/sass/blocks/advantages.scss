@@ -5,7 +5,7 @@
 .advantages__header {
   position: relative;
   margin-bottom: 50px;
-  padding: 45px 0 30px 0;
+  padding: 45px 20px 30px 20px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -57,21 +57,48 @@
 }
 
 .advantages__list-wrapper {
+  position: relative;
   margin: 0 auto;
   padding: 0 20px 300px 20px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 157px;
+    height: 280px;
+    bottom: 0;
+    left: calc(50% - 78px);
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 157px 320px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+
+    &::after {
+      width: 268px;
+      height: 481px;
+      bottom: 0;
+      left: calc(50% - 310px);
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-size: 268px 481px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 960px;
     padding: 300px 10px 0 10px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .advantages__list {
   display: flex;
+
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;

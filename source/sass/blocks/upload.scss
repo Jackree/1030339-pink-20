@@ -1,0 +1,172 @@
+.upload__container {
+  padding: 0 20px;
+  background-color: #F2F2F2;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px 0 80px;
+  }
+}
+
+.upload__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.upload__image-wrapper {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.upload__filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    min-height: 400px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
+}
+
+.upload__filter-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  padding: 0 60px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.upload__filter-button {
+  width: 44px;
+  height: 44px;
+}
+
+.upload__filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.upload__filter {
+  display: none;
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $primary-color;
+    opacity: 0.1;
+  }
+
+  &--current {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      &::after {
+        height: 0;
+      }
+    }
+  }
+}
+
+.upload__filter-scale {
+  width: 100%;
+  margin: 0 40px;
+}
+
+.upload__filter-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.upload__buttons {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.upload__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 14px;
+  width: 100%;
+  border: 3px solid $primary-color;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $primary-color;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+}
+
+.upload__confirm-btn {
+  border-color: $accent-color;
+  color: $accent-color;
+
+}
+
+.upload__cancel-btn {
+  opacity: 0.1;
+}

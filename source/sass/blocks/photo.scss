@@ -36,3 +36,16 @@
     padding: 0 10px;
   }
 }
+
+.photo__text {
+  margin: 0 auto;
+  padding: 20px 20px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 50px 20px;
+  }
+
+}
