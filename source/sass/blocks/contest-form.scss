@@ -25,7 +25,7 @@
 
 .contest-form__user {
   padding: 0;
-  border: 0
+  border: 0;
 }
 
 .contest-form__user-field {
@@ -57,7 +57,7 @@
 .contest-form__user-input {
   width: 100%;
   padding: 15px 20px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
@@ -74,11 +74,11 @@
   width: 100%;
   margin: 0 auto;
   padding: 35px 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   order: 2;
 
   @media (min-width: $tablet-width) {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     order: 4;
   }
 
@@ -93,7 +93,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 50px 60px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 }
@@ -117,7 +117,7 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
 }
 
@@ -153,10 +153,10 @@
   width: 35px;
   height: 35px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
 }
 
@@ -182,7 +182,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 30px 60px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
@@ -235,7 +235,7 @@
 .contest-form__contacts-input {
   width: 100%;
   padding: 17px 20px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-size: 18px;
   color: $primary-color;
@@ -257,7 +257,7 @@
       height: 100%;
       width: 59px;
       right: 0;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-size: 20px 19px;
@@ -278,7 +278,7 @@
       height: 100%;
       width: 59px;
       right: 0;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-size: 20px 19px;
@@ -292,11 +292,11 @@
 .contest-form__app-wrapper {
   width: 100%;
   padding: 40px 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   order: 4;
 
   @media (min-width: $tablet-width) {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     order: 2;
   }
 
@@ -312,7 +312,7 @@
   border: 0;
 
   @media (min-width: $tablet-width) {
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 }
@@ -369,10 +369,10 @@
   width: 37px;
   height: 37px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 50%;
 }
 
@@ -407,7 +407,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 60px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 }
@@ -424,7 +424,7 @@
   width: 100%;
   min-height: 200px;
   padding: 15px 20px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-size: 18px;
   color: $primary-color;
@@ -455,12 +455,12 @@
 .contest-form__button {
   margin-bottom: 40px;
   padding: 15px 45px;
-  border: 2px solid #2AAB6D;
+  border: 2px solid #2aab6d;
   border-radius: 1px;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  background: #2AAB6D;
+  background: #2aab6d;
   color: #ffffff;
   cursor: pointer;
 
@@ -475,7 +475,7 @@
 }
 
 .contest-form__description-star {
-  color: $accent-color
+  color: $accent-color;
 }
 
 .contest-form__description-desktop {
