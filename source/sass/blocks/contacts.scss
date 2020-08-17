@@ -35,6 +35,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    padding: 0 10px;
+  }
 }
 
 .contacts__item {

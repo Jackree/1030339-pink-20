@@ -129,6 +129,7 @@
   margin: 0 0 20px 0;
   font-weight: bold;
   font-size: 18px;
+  line-height: 24px;
   text-align: center;
   color: #000000;
 
@@ -145,6 +146,7 @@
 
 .advantages__item-description {
   margin: 0;
+  line-height: 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

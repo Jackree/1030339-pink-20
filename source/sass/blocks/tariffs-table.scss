@@ -1,11 +1,28 @@
-.tariffs__wrapper {
+.tariffs-table {
+  width: 825px;
   margin: 0 auto;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.tariffs-table th,
+.tariffs-table td {
+  @media (min-width: $tablet-width) {
+    width: 25%;
+  }
 }
 
 .tariffs-table__title {
   padding: 12px 15px;
+  border: 2px solid #f2f2f2;
   text-align: center;
-  line-height: 30px;
   background-color: $primary-color;
   color: #FFFFFF;
 }
@@ -29,24 +46,44 @@
 
 .tariffs-table__option {
   padding: 10px 15px;
-  line-height: 30px;
+  border: 2px solid #f2f2f2;
   background-color: #FFFFFF;
-  border: 2px solid #E5E5E5;
 }
 
-// .tariffs-table--hit .tariffs-table__title {
+.tariffs-table__option-title {
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+// .tariffs-table__title--hit{
 //   position: relative;
 
 //   &::before {
 //     content: "Хит";
+//     left: 0;
+//     top: 0;
+//     width: 74px;
+//     height: 74px;
 //     position: absolute;
 //     text-transform: uppercase;
+//     background-color: $accent-color;
+//     color: #ffffff;
+//     transform: rotate(-45deg);
 //   }
 // }
 
-@media (max-width: $tablet-width) {
-  .tariffs-table__hidden,
-  .tariffs-table__option--mobile {
-    display: none;
+.tariffs-table__hidden,
+.tariffs-table__option--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
   }
 }
