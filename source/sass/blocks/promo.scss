@@ -55,7 +55,7 @@
     padding-bottom: 455px;
 
     &::after {
-     bottom: 0;
+      bottom: 0;
       width: 1050px;
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
@@ -71,7 +71,7 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 300px;
