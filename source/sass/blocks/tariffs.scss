@@ -7,12 +7,20 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
 
 
 .tariffs__slider-controls {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 45px;
   justify-content: center;
   align-items: center;
 
@@ -22,7 +30,7 @@
 }
 
 .tariffs__slider-button {
-  margin-right: 20px;
+  margin-right: 15px;
   width: 6px;
   height: 6px;
   padding: 0;
