@@ -20,12 +20,20 @@
   }
 }
 
-.footer__logo-wrapper,
+.footer__logo-wrapper {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .footer__social-wrapper {
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    width: 185px;
+    margin-bottom: -5px;
   }
 }
 

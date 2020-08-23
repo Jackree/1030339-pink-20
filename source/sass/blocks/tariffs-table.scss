@@ -25,6 +25,10 @@
   text-align: center;
   background-color: $primary-color;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 15px;
+  }
 }
 
 .tariffs-table__name {
@@ -32,12 +36,25 @@
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .tariffs-table__price {
   margin: 0;
+  margin-bottom: 15px;
   font-weight: 300;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariffs-table--mobile {
@@ -45,9 +62,18 @@
 }
 
 .tariffs-table__option {
-  padding: 10px 15px;
+  padding: 14px 21px;
   border: 2px solid #f2f2f2;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
 }
 
 .tariffs-table__option-title {
