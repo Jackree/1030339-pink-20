@@ -28,7 +28,7 @@
 
 .photo-panorama__message {
   position: relative;
-  padding: 150px 20px 0 20px;
+  padding: 155px 10px 20px 17px;
   background-color: #f2f2f2;
 
   &::before {
@@ -70,6 +70,7 @@
 
 .photo-panorama__user {
   margin: 0;
+  line-height: 24px;
   font-weight: bold;
 }
 
@@ -79,7 +80,24 @@
   text-transform: uppercase;
 }
 
+.photo-panorama__text {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.photo-panorama__text br {
+  @media (min-width: 350px) {
+    display: none;
+  }
+}
+
 .photo-panorama__likes {
+  margin: 0;
+  padding-left: 30px;
+
+  font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
   color: $accent-color;
 }
