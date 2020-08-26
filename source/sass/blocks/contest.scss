@@ -5,17 +5,18 @@
 .contest__lead {
   width: 280px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 0 37px 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 490px;
-    padding: 95px 0 75px 0;
+    padding: 90px 0 70px 0;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 755px;
+    padding: 90px 0 85px 0;
+    width: 760px;
   }
 }
 

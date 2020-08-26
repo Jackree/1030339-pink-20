@@ -14,8 +14,12 @@
       <div class="main-navigation__container container">
         <div class="main-navigation__wrapper">
           <a class="main-navigation__logo logo" href="index.html">
-            <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="74"
-              height="23">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="74"
+                height="23">
+            </picture>
           </a>
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -42,7 +46,7 @@
   <main>
     <div class="page-heading">
       <div class="page-heading__container container">
-        <h1 class="page-heading__title">Фотографии пользователей</h1>
+        <h1 class="page-heading__title">Фотографии <br>пользователей</h1>
       </div>
     </div>
     <section class="photo">
@@ -51,21 +55,26 @@
       <div class="photo__panorama photo-panorama">
         <div class="photo-panorama__wrapper">
           <div class="photo-panorama__image-wrapper">
-            <img class="photo-panorama__image" src="img/panorama-mobile@1x.jpg" alt="Панорама с моста" width="320"
-              height="137">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo-panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+                alt="Панорама с моста" width="320" height="137">
+            </picture>
           </div>
           <div class="photo-panorama__message">
             <p class="photo-panorama__user">Анна
               <span class="photo-panorama__time">(5 минут назад)</span>
             </p>
             <p class="photo-panorama__text">
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
+              Прыгать или нет? Напишите в комментарии свой совет и <br>смотрите прямую трансляцию в перископе, задавайте
               свои
               вопросы!
             </p>
-            <p class="photo-panorama__likes">
+            <a href="#" class="photo-panorama__likes">
               Нравится: 215
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -73,8 +82,14 @@
         <ul class="photo__list photo-list">
           <li class="photo-list__item photo-item">
             <div class="photo-item__image-wrapper">
-              <img class="photo-item__image" src="img/photo-car-mobile@1x.jpg" alt="Фотография авто" width="280"
-                height="180">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo-item__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                  alt="Фотография авто" width="280" height="180">
+              </picture>
             </div>
             <div class="photo-item__message">
               <p class="photo-item__user">Левон
@@ -88,8 +103,14 @@
           </li>
           <li class="photo-list__item photo-item">
             <div class="photo-item__image-wrapper">
-              <img class="photo-item__image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка"
-                width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo-item__image" src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка" width="280" height="180">
+              </picture>
             </div>
             <div class="photo-item__message">
               <p class="photo-item__user">Антон
@@ -101,8 +122,14 @@
           </li>
           <li class="photo-list__item photo-item">
             <div class="photo-item__image-wrapper">
-              <img class="photo-item__image" src="img/photo-window-mobile@1x.jpg" alt="Вид через стеклянную крышу"
-                width="280" height="180">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo-item__image" src="img/photo-window-mobile@1x.jpg"
+                  srcset="img/photo-window-mobile@2x.jpg 2x" alt="Вид через стеклянную крышу" width="280" height="180">
+              </picture>
             </div>
             <div class="photo-item__message">
               <p class="photo-item__user">Борис
@@ -114,8 +141,14 @@
           </li>
           <li class="photo-list__item photo-item">
             <div class="photo-item__image-wrapper">
-              <img class="photo-item__image" src="img/photo-fair-mobile@1x.jpg" alt="Рынок кубанской бахчи" width="280"
-                height="180">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo-item__image" src="img/photo-fair-mobile@1x.jpg"
+                  srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Рынок кубанской бахчи" width="280" height="180">
+              </picture>
             </div>
             <div class="photo-item__message">
               <p class="photo-item__user">Сергей
@@ -127,8 +160,14 @@
           </li>
           <li class="photo-list__item photo-item">
             <div class="photo-item__image-wrapper">
-              <img class="photo-item__image" src="img/photo-pov-mobile@1x.jpg" alt="Вид с горы" width="280"
-                height="180">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo-item__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                  alt="Вид с горы" width="280" height="180">
+              </picture>
             </div>
             <div class="photo-item__message">
               <p class="photo-item__user">Максим
@@ -140,8 +179,14 @@
           </li>
           <li class="photo-list__item photo-item">
             <div class="photo-item__image-wrapper">
-              <img class="photo-item__image" src="img/photo-wing-mobile@1x.jpg" alt="Вид с самолета" width="280"
-                height="180">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo-item__image" src="img/photo-wing-mobile@1x.jpg"
+                  srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Вид с самолета" width="280" height="180">
+              </picture>
             </div>
             <div class="photo-item__message">
               <p class="photo-item__user">Надежда
@@ -160,7 +205,14 @@
       <div class="upload__container container">
         <div class="upload__wrapper">
           <div class="upload__image-wrapper">
-            <img src="https://via.placeholder.com/280x374">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="photo-item__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+                alt="Вид с самолета" width="280" height="374">
+            </picture>
           </div>
           <div class="upload__filter-wrapper">
             <div class="upload__filter-controls">
@@ -217,8 +269,11 @@
     <div class="footer__container container">
       <div class="footer__logo-wrapper">
         <a class="footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink" width="145"
-            height="40">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="footer-logo__image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink"
+              width="145" height="40">
+          </picture>
         </a>
       </div>
 

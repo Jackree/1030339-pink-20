@@ -1,11 +1,15 @@
 .contacts {
   padding-top: 40px;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .contacts__lead {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 0 20px;
   font-weight: 300;
   font-size: 24px;
@@ -20,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    margin-bottom: 40px;
     padding: 0 10px;
     font-size: 50px;
     line-height: 68px;
@@ -41,6 +46,7 @@
   @media (min-width: $desktop-width) {
     width: 960px;
     padding: 0 10px;
+    justify-content: space-between;
   }
 }
 
@@ -57,7 +63,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33.3%;
+    width: 32%;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &--mail {
       order: 1;
@@ -90,14 +100,23 @@
 }
 
 .contacts__map {
-  min-height: 215px;
   background-color: #f2f2f2;
+}
+
+.contacts__map-wrapper {
+  height: 200px;
 
   @media (min-width: $tablet-width) {
-    min-height: 374px;
+    height: 375px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 502px;
+    height: 500px;
   }
+}
+
+.contacts__map-iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
 }

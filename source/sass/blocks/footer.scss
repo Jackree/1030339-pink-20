@@ -1,6 +1,10 @@
 .footer {
   background-color: #ffffff;
   padding: 40px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
+  }
 }
 
 .footer__container {
@@ -33,7 +37,11 @@
 
   @media (min-width: $tablet-width) {
     width: 185px;
-    margin-bottom: -5px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
   }
 }
 

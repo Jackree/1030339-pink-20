@@ -14,6 +14,11 @@
     padding-top: 50px;
     padding-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 125px;
+    padding-bottom: 95px;
+  }
 }
 
 

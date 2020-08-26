@@ -13,6 +13,7 @@
   background-color: #ffffff;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
     padding-top: 60px;
   }
 }
@@ -71,6 +72,10 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 157px 320px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -83,12 +88,16 @@
       left: calc(50% - 310px);
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-size: 268px 481px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    padding: 305px 10px 0 10px;
+    padding: 0 10px 0 10px;
 
     &::after {
       display: none;
@@ -121,13 +130,54 @@
   margin: 0 0 30px 0;
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 240px;
+    padding-top: 360px;
     margin-right: 80px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 292px 302px;
 
     &:nth-child(3n),
     &:last-child {
       margin-right: 0;
     }
+
+    &--mood {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      }
+    }
+
+    &--change {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      }
+    }
+
+    &--friends {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      }
+    }
+  }
+}
+
+.advantages__item--change br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

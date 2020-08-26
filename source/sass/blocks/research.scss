@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 112px 0;
+    padding: 115px 0 110px 0;
     background-color: #f2f2f2;
   }
 }
@@ -22,11 +22,31 @@
 }
 
 .research__text {
+  position: relative;
   width: 50%;
   margin-left: auto;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    top: -41px;
+    left: -310px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   @media (min-width: $desktop-width) {
     width: 570px;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+      left: -370px;
+      top: -90px;
+    }
   }
 }
 
@@ -45,10 +65,17 @@
   }
 }
 
-.research__title br,
-.research__description br {
+.research__description-br-tablet {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.research__description-br-desk {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 

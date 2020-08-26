@@ -14,8 +14,12 @@
       <div class="main-navigation__container container">
         <div class="main-navigation__wrapper">
           <a class="main-navigation__logo logo">
-            <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="74"
-              height="23">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="74"
+                height="23">
+            </picture>
           </a>
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -79,19 +83,19 @@
       </div>
       <div class="advantages__list-wrapper">
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--mood">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
             <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию
               буквально
               в несколько кликов!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--change">
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
             <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы
+              чтобы <br>
               усилить эффект</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--friends">
             <h3 class="advantages__item-title">Заводит новых друзей</h3>
             <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
               заводите новых</p>
@@ -103,9 +107,10 @@
     <section class="research">
       <div class="research__wrapper container">
         <div class="research__text">
-          <h2 class="research__title">Эффект <br> на 24 часа!</h2>
-          <p class="research__description">Британские ученые провели исследования <br>и доказали, что положительный эффект
-            <br>от использования приложения длится целые сутки!</p>
+          <h2 class="research__title">Эффект <br class="research__description-br-tablet"> на 24 часа!</h2>
+          <p class="research__description">Британские ученые провели исследования <br class="research__description-br-tablet">и доказали,<br class="research__description-br-desk"> что положительный
+            эффект
+            <br class="research__description-br-tablet">от использования приложения длится целые сутки!</p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -137,6 +142,12 @@
             <span class="visually-hidden">Слайд 3</span>
           </button>
         </div>
+        <button class="reviews__button-desktop reviews__button-desktop--prev" type="button">
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="reviews__button-desktop reviews__button-desktop--next" type="button">
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
       </div>
     </section>
 
@@ -148,16 +159,22 @@
               <th class="tariffs-table__hidden">
               </th>
               <th class="tariffs-table__title">
-                <p class="tariffs-table__name">База</p>
-                <p class="tariffs-table__price">1,99 USD</p>
+                <div class="tariffs-table__title-wrapper">
+                  <p class="tariffs-table__name">База</p>
+                  <p class="tariffs-table__price">1,99 USD</p>
+                </div>
               </th>
               <th class="tariffs-table__title tariffs-table__title--hit">
-                <p class="tariffs-table__name">Стандарт</p>
-                <p class="tariffs-table__price">3,99 USD</p>
+                <div class="tariffs-table__title-wrapper">
+                  <p class="tariffs-table__name">Стандарт</p>
+                  <p class="tariffs-table__price">3,99 USD</p>
+                </div>
               </th>
               <th class="tariffs-table__title">
-                <p class="tariffs-table__name">Анлим</p>
-                <p class="tariffs-table__price">9,99 USD</p>
+                <div class="tariffs-table__title-wrapper">
+                  <p class="tariffs-table__name">Анлим</p>
+                  <p class="tariffs-table__price">9,99 USD</p>
+                </div>
               </th>
             </tr>
             <tr>
@@ -165,13 +182,22 @@
                 <span class="tariffs-table__option-title">Розовый фильтр</span>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Розовый фильтр</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Розовый фильтр</span>
+                  <img src="img/icon-yes.svg" width="31" height="21">
+                </div>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Розовый фильтр</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Розовый фильтр</span>
+                  <img src="img/icon-yes.svg" width="31" height="21">
+                </div>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Розовый фильтр</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Розовый фильтр</span>
+                  <img src="img/icon-yes.svg" width="31" height="21">
+                </div>
               </td>
             </tr>
             <tr>
@@ -179,13 +205,22 @@
                 <span class="tariffs-table__option-title">Смайлики</span>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Смайлики</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Смайлики</span>
+                  <img src="img/icon-no.svg" width="27" height="27">
+                </div>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Смайлики</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Смайлики</span>
+                  <img src="img/icon-yes.svg" width="31" height="21">
+                </div>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Смайлики</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Смайлики</span>
+                  <img src="img/icon-yes.svg" width="31" height="21">
+                </div>
               </td>
             </tr>
             <tr>
@@ -193,13 +228,22 @@
                 <span class="tariffs-table__option-title">Комментарии</span>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Комментарии</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Комментарии</span>
+                  <img src="img/icon-no.svg" width="27" height="27">
+                </div>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Комментарии</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Комментарии</span>
+                  <img src="img/icon-no.svg" width="27" height="27">
+                </div>
               </td>
               <td class="tariffs-table__option">
-                <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Комментарии</span>
+                <div class="tariffs-table__option-wrapper">
+                  <span class="tariffs-table__option-title tariffs-table__option-title--mobile">Комментарии</span>
+                  <img src="img/icon-yes.svg" width="31" height="21">
+                </div>
               </td>
             </tr>
           </tbody>
@@ -241,7 +285,12 @@
         </div>
       </div>
       <div class="contacts__map">
-        <!-- тут будет карта -->
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__map-iframe"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0811dc343ace82d36827890dab4019db80f7c9f0ebda172bd27e2b7d41ac07fb&amp;source=constructor"
+            frameborder="0"></iframe>
+        </div>
+      </div>
       </div>
     </section>
   </main>
@@ -250,8 +299,11 @@
     <div class="footer__container container">
       <div class="footer__logo-wrapper">
         <a class="footer__logo footer-logo" href="index.html">
-          <img class="footer-logo__image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink" width="145"
-            height="40">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="footer-logo__image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink"
+              width="145" height="40">
+          </picture>
         </a>
       </div>
 
