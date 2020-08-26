@@ -72,6 +72,10 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 157px 320px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -84,6 +88,10 @@
       left: calc(50% - 310px);
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-size: 268px 481px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      }
     }
   }
 

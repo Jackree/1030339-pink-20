@@ -7,14 +7,14 @@
 
   @media (min-width: $tablet-width) {
     width: 450px;
-    padding-top: 100px;
-    padding-bottom: 85px;
+    padding-top: 90px;
+    padding-bottom: 78px;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 575px;
-    padding-bottom: 95px;
+    padding-bottom: 90px;
   }
 }
 
@@ -43,6 +43,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 50px 20px;
+    padding: 45px 20px 70px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 20px 65px 20px;
   }
 }

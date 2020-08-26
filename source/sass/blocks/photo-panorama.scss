@@ -52,19 +52,16 @@
     @media (min-width: $tablet-width) {
       top: 55px;
     }
-
-    @media (min-width: $desktop-width) {
-      right: 10px;
-    }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 520px 20px 0 20px;
+    padding: 530px 30px 16px 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     width: 940px;
+    padding: 528px 30px 16px 27px;
   }
 }
 
@@ -93,6 +90,7 @@
 }
 
 .photo-panorama__likes {
+  display: flex;
   margin: 0;
   padding-left: 30px;
 
@@ -100,4 +98,17 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $accent-color;
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    padding-left: 0;
+    padding-right: 30px;
+    top: 532px;
+    right: 30px;
+    background-position: center right;
+  }
 }

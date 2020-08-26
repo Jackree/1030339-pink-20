@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     min-height: 455px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 555px;
+  }
 }
 
 .photo-item__image-wrapper {
@@ -33,7 +37,11 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px 0 30px;
+    padding: 13px 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 30px 0 27px;
   }
 }
 
@@ -49,11 +57,21 @@
 
 .photo-item__likes {
   position: absolute;
-  bottom: 20px;
+  width: calc(100% - 60px);
+  bottom: 24px;
   margin: 0;
   padding-left: 30px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: $accent-color;
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    background-position: center right;
+  }
 }
