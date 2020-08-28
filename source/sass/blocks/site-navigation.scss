@@ -36,7 +36,7 @@
   }
 
   &:active {
-    color: rgba($accent-color, 0.3)
+    color: rgba($accent-color, 0.3);
   }
 
   @media (min-width: $desktop-width) {
@@ -58,7 +58,7 @@
     }
 
     &:active {
-      color: rgba(#ffffff, 0.3)
+      color: rgba(#ffffff, 0.3);
     }
   }
 }

@@ -38,7 +38,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     width: 300px;
-    top: 23px
+    top: 23px;
   }
 }
 
@@ -134,12 +134,13 @@
     margin-bottom: 0;
     padding-bottom: 25px;
     padding-top: 25px;
+
+    &::after {
+      width: 100%;
+      left: 0;
+    }
   }
 
-  &::after {
-    width: 100%;
-    left: 0;
-  }
 
   @media (min-width: $desktop-width) {
 
@@ -258,10 +259,7 @@
   color: $primary-color;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color 0.3s,
-              border-color 0.3s,
-              color 0.3s,
-              opacity 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, opacity 0.3s;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
