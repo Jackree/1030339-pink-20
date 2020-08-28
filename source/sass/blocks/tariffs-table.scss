@@ -142,3 +142,14 @@
     display: table-cell;
   }
 }
+
+.tariff-table__option-icon {
+
+  &--yes {
+    fill: #3dc644;
+  }
+
+  &--no {
+    fill: #f25b26
+  }
+}

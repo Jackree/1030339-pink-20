@@ -74,9 +74,18 @@
   font-size: 18px;
   line-height: 30px;
   color: $primary-color;
+  transition: border-color 0.3s;
 
   &::placeholder {
     opacity: 1;
+  }
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
   }
 }
 
@@ -192,7 +201,7 @@
   appearance: none;
 }
 
-.contest-form__achievements-checkbox + label::before {
+.contest-form__achievements-checkbox+label::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -207,8 +216,17 @@
   border-radius: 1px;
 }
 
+.contest-form__achievements-checkbox:hover + label::before,
+.contest-form__achievements-checkbox:focus + label::before {
+  border-color: $primary-color;
+}
+
+.contest-form__achievements-checkbox:active + label::before {
+  border-color: $accent-color;
+}
+
 .contest-form__achievements-checkbox:checked + label::before {
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/checkbox.svg");
 }
 
 //=====Contacts=====//
@@ -298,6 +316,16 @@
   border-radius: 1px;
   font-size: 18px;
   color: $primary-color;
+
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
 
   &::placeholder {
     opacity: 1;
@@ -440,7 +468,7 @@
   }
 }
 
-.contest-form__app-radio + label::before {
+.contest-form__app-radio+label::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -455,11 +483,20 @@
   border-radius: 50%;
 }
 
-.contest-form__app-radio:checked + label::after {
+.contest-form__app-radio:hover+label::before,
+.contest-form__app-radio:focus+label::before {
+  border-color: $primary-color;
+}
+
+.contest-form__app-radio:active+label::before {
+  border-color: $accent-color;
+}
+
+.contest-form__app-radio:checked+label::after {
   content: "";
   position: absolute;
   top: 8px;
-  left: 11px;
+  left: 10px;
   width: 15px;
   height: 15px;
   background-color: $accent-color;
@@ -518,6 +555,16 @@
   line-height: 30px;
   color: $primary-color;
 
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
+
   &::placeholder {
     opacity: 1;
   }
@@ -562,6 +609,17 @@
   background: #2aab6d;
   color: #ffffff;
   cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: #1C9B5E;
+    border-color: #1C9B5E;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 20px 55px;

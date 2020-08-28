@@ -1,6 +1,5 @@
 .reviews {
   padding-top: 40px;
-  margin-bottom: 60px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -10,7 +9,6 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding-top: 185px;
-    margin-bottom: 30px;
 
     &::before {
       content: "";
@@ -126,9 +124,24 @@
   background-color: rgba($primary-color, 0.3);
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: rgba($primary-color, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($primary-color, 0.1);
+  }
+
   &--current {
     border: 3px solid $primary-color;
     background-color: #ffffff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+    }
   }
 
   &:last-child {

@@ -38,7 +38,7 @@ const images = () => {
     .pipe(
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.mozjpeg({ progressive: true }),
+        imagemin.mozjpeg({ progressive: true, quality: 80 }),
         imagemin.svgo(),
       ])
     )
@@ -51,7 +51,7 @@ const createWebp = () => {
   return gulp
     .src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 };
 
 exports.webp = createWebp;
@@ -89,7 +89,9 @@ const copy = () => {
 exports.copy = copy;
 
 const html = () => {
-  return gulp.src("source/*.html").pipe(gulp.dest("build"));
+  return gulp
+    .src("source/*.html")
+    .pipe(gulp.dest("build"));
 };
 
 exports.html = html;
@@ -108,15 +110,21 @@ const server = (done) => {
   done();
 };
 
+
 exports.server = server;
+
+const refresh = (done) => {
+  sync.reload(),
+  done();
+};
 
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles, refresh));
+  gulp.watch("source/img/icon-*.svg", gulp.series(sprite, html, refresh));
+  gulp.watch("source/*.html").on("change", gulp.series(html, refresh));
 };
-
 
 const build = gulp.series(
   clean,

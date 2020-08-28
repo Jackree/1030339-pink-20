@@ -17,4 +17,17 @@
   align-items: center;
   border: 3px solid rgba($primary-color, 0.1);
   border-radius: 50%;
+  transition: border-color 0.5s;
+
+  &:hover, &:focus {
+    border-color: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social-list__link-icon {
+  fill: $accent-color;
 }

@@ -50,12 +50,24 @@
 
 .main-navigation__toggle {
   display: flex;
+  padding: 0;
   border: none;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   background-repeat: no-repeat;
+  fill: #ffffff;
   cursor: pointer;
+  transition: fill 0.3s;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 15px;
@@ -75,16 +87,9 @@
     display: none;
   }
 
-  .main-navigation--closed .main-navigation__toggle {
-    width: 50px;
-    height: 24px;
-    background-image: url("../img/icon-menu-burger.svg");
-  }
-
-  .main-navigation--opened .main-navigation__toggle {
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/icon-menu-cross.svg");
+  .main-navigation--closed .main-navigation__toggle--close,
+  .main-navigation--opened .main-navigation__toggle--open {
+    display: none;
   }
 
   .main-navigation--nojs .main-navigation__toggle {

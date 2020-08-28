@@ -50,6 +50,15 @@
   align-items: center;
   justify-content: space-between;
   min-width: 130px;
+
+  &:hover .footer__copyright-image,
+  &:focus .footer__copyright-image {
+    fill: $primary-color;
+  }
+
+  &:active .footer__copyright-image {
+    opacity: 0.3;
+  }
 }
 
 .footer__copyright-text {
@@ -59,4 +68,9 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
+}
+
+.footer__copyright-image {
+  fill: $accent-color;
+  transition: fill 0.3s;
 }

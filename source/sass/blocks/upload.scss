@@ -4,6 +4,7 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-bottom: 30px;
     padding: 0 60px 0 80px;
   }
 }
@@ -18,10 +19,16 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     flex-direction: row;
     justify-content: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 36px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding-bottom: 70px;
   }
 }
 
@@ -29,7 +36,9 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 300px;
+    top: 23px
   }
 }
 
@@ -40,7 +49,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 260px;
+    width: 280px;
     min-height: 400px;
     margin-left: 45px;
   }
@@ -54,8 +63,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0;
-  padding: 0 40px;
+  margin: 35px 0;
+  padding: 0 50px 0 37px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -63,10 +72,33 @@
 }
 
 .upload__filter-button {
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   border: none;
+  cursor: pointer;
+  background-color: transparent;
+  fill: rgba($primary-color, 0.3);
+  transition: fill 0.3s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    fill: rgba($primary-color, 0.5);
+  }
+
+  &--current {
+    fill: $accent-color;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
 }
 
 .upload__filters {
@@ -78,14 +110,14 @@
 .upload__filter {
   display: none;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding-bottom: 35px;
 
   &::after {
     content: "";
     position: absolute;
     left: -20px;
-    bottom: 8px;
+    bottom: -2px;
     width: 100vw;
     height: 1px;
     background-color: $primary-color;
@@ -98,14 +130,41 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
 
-    &::after {
-      width: 100%;
-      left: 0;
-    }
+  &::after {
+    width: 100%;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
+
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    &--crop svg {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill svg {
+      width: 48px;
+      height: 46px;
+    }
+
+    &--contrast svg {
+      width: 33px;
+      height: 32px;
+    }
+
+    &::after {
+      bottom: 2px;
+    }
+
     &:last-child {
       &::after {
         height: 0;
@@ -115,8 +174,36 @@
 }
 
 .upload__filter-scale {
+  appearance: none;
   width: 100%;
+  height: 2px;
   margin: 0 20px;
+
+  background-color: $primary-color;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 2px solid $accent-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 2px solid $accent-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 290px;
+  }
 }
 
 .upload__filter-icon {
@@ -124,6 +211,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+
+    fill: $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 15px;
   }
 }
 
@@ -134,7 +230,15 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 27px;
+    width: 260px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 410px;
+    bottom: 32px;
     flex-direction: row;
   }
 }
@@ -154,6 +258,10 @@
   color: $primary-color;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s,
+              border-color 0.3s,
+              color 0.3s,
+              opacity 0.3s;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
@@ -167,8 +275,28 @@
 .upload__confirm-btn {
   border-color: $accent-color;
   color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 .upload__cancel-btn {
   opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: $primary-color;
+  }
 }
