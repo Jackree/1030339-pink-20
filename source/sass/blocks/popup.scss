@@ -1,0 +1,128 @@
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: calc(50% - 145px);
+  width: 100%;
+  min-height: 290px;
+  margin: 0 auto;
+  padding: 40px 20px 50px 20px;
+  text-align: center;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  background-color: #ffffff;
+  color: #000000;
+
+
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    min-height: 365px;
+    top: calc(50% - 182.5px);
+    left: calc(50% - 230px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    min-height: 380px;
+    top: calc(50% - 190px);
+    left: calc(50% - 390px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 60%, rgba(242, 242, 242, 1) 60%);
+  }
+}
+
+.popup__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.popup__title {
+  margin: 0 auto 25px auto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.popup__text {
+  margin: 0 auto;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.popup__button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  left: calc(50% - 137.5px);
+  width: 275px;
+  margin: 0 auto;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3)
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+}
+
+.popup--success {
+  min-height: 380px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 60%, rgba(242, 242, 242, 1) 60%);
+
+  @media (min-width: $tablet-width) {
+    min-height: 432px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 380px;
+  }
+}
+
+.popup--success br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
