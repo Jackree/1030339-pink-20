@@ -2,31 +2,8 @@
   background-color: #f2f2f2;
   position: relative;
 
-  &::before {
-    content: "";
-    background: #ffffff;
-    width: 100%;
-    height: 100%;
-    top: 219px;
-    display: block;
-    position: absolute;
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 3%);
-  }
-
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
-
-    &::before {
-      top: 210px;
-      clip-path: polygon(0 0, 100% 0, 100% 4%, 0 11%);
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      top: 269px;
-      clip-path: polygon(0 0, 100% 0, 100% 5%, 0 16%);
-    }
   }
 }
 
@@ -36,9 +13,33 @@
   padding: 45px 20px 30px 20px;
   background-color: #ffffff;
 
+  &::after {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    left: 0;
+    bottom: -32px;
+    background-color: #ffffff;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      height: 55px;
+      bottom: -55px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 25px;
     padding-top: 60px;
+
+    &::after {
+      height: 165px;
+      bottom: -165px;
+      clip-path: polygon(120% 0,0 0,0 75%);
+    }
   }
 }
 
