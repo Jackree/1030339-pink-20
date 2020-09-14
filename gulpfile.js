@@ -134,7 +134,7 @@ const server = (done) => {
 exports.server = server;
 
 const refresh = (done) => {
-  sync.reload(), done();
+  sync.reload(); done();
 };
 
 // Watcher
